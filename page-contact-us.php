@@ -13,5 +13,14 @@
           </header>
 
           <div class="entry-content">
+            <?php the_content(); ?>
+            <p> FORM CODE GOES HERE</p>
+          </div><!-- .entry-content -->
+        </article> <!-- #post -->    
+    
+      <?php endwhile; // end of the loop. ?>
+    </div> <!-- #content -->
+  </div> <!-- #primary -->
 
-
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
