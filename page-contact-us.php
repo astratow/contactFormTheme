@@ -14,7 +14,14 @@
 
           <div class="entry-content">
             <?php the_content(); ?>
-            <p> FORM CODE GOES HERE</p>
+            <div id="respond">
+                <?php echo $response; ?>
+                <form action="<?php the_permalink(); ?>" method="POST">
+                    <p>
+                        <label for="name">
+                    </p>
+                </form>
+            </div>
           </div><!-- .entry-content -->
         </article> <!-- #post -->    
     
