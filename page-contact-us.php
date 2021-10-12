@@ -1,3 +1,18 @@
+<?php 
+    //response generation function
+    $response = "";
+
+    //function to generate response
+    function my_contact_form_generate_response($type, $message){
+
+        global $response;
+
+        if($type == "success") $response = "<div class='success'>{$message}</div>";
+        else $response = "<div class='error'>{$message}</div>";
+    }
+
+    if($type)
+?>
 <?php get_header(); ?>
   <div id="primary" class="site-content">
     <div id="content" role="main">
