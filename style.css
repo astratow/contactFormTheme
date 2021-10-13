@@ -7,7 +7,7 @@ Author URI: https://ArturMickiewicz.com
 Template: twentytwenty
 Version: 0.1
 */
-.error{
+/*.error{
     padding: 5px 9px;
     border: 1px solid red;
     color: red;
@@ -23,5 +23,5 @@ Version: 0.1
  
   form span{
     color: red;
-  }
+  }*/
 @import url("../twentytwenty/style.css");
