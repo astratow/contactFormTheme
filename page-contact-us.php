@@ -11,7 +11,23 @@
         else $response = "<div class='error'>{$message}</div>";
     }
 
-    if($type)
+    // response messages
+    $not_human          = "Human verification failed.";
+    $missing_content    = "Please supply all information";
+    $email_invalid      = "Email Address Invalid.";
+    $message_unsent     = "Message was not sent. Try again.";
+    $message_unsent     = "Thanks! Your message has been sent." ;
+
+    // user posted variables
+    $name       = $_POST['message_name'];
+    $email      = $_POST['message_email'];
+    $message    = $_POST['message_text'];
+
+    // php mailer variables
+    $to         = get_option('admin_email');
+    $subject    = "Someone sent message from" .get_bloginfo('name');
+    $headers    "From: " . $email . "\r\n" . "Reply-To: " . $email. "\r\n";
+    
 ?>
 <?php get_header(); ?>
   <div id="primary" class="site-content">
