@@ -1,3 +1,4 @@
 # contactFormTheme
 
-Source: https://wpmudev.com/blog/how-to-build-your-own-wordpress-contact-form-and-why/
+This project is an attempt to build contact form theme for Wordpress.
+
